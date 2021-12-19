@@ -13,5 +13,4 @@ white = [ (255,255,255) ] * numLEDs
 
 # Fade to white
 client.put_pixels(black)
-client.put_pixels(black)
 time.sleep(0.5)
