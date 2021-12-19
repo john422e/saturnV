@@ -1,4 +1,4 @@
-import pygame
+import pygame, threading
 
 sfName = "../apollo11launch.wav"
 pygame.mixer.init(frequency=48000)
