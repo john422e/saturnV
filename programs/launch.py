@@ -1,4 +1,5 @@
 import pygame, threading, os, time
+import opc
 
 def startUp():
     returnedValue = serverCall = "sudo ../../fadecandy/bin/fcserver-rpi saturnVconfig.json"
