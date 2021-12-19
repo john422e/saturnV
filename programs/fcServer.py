@@ -8,7 +8,7 @@ print('returned value:', returnedValue)
 
 time.sleep(2)
 
-"""
+
 #!/usr/bin/env python
 
 # Light each LED in sequence, and repeat.
@@ -21,4 +21,3 @@ while True:
 		pixels[i] = (255, 255, 255)
 		client.put_pixels(pixels)
 		time.sleep(0.01)
-"""
