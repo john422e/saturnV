@@ -1,12 +1,12 @@
 {
   "listen": ["127.0.0.1", 7890],
-  "relay": NULL,
+  "relay": null,
   "verbose": true,
 
   "color": {
     "gamma": 2.5,
     "whitepoint": [1.0, 1.0, 1.0]
-  }
+  },
 
   "devices": [
     {
