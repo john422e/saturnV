@@ -9,6 +9,6 @@ numLEDs = 50
 client = opc.Client('localhost:7890')
 
 for i in range(numLEDs):
-	pixels = [ (0,0,0) ] * numLEDs
+	#pixels = [ (0,0,0) ] * numLEDs
 	pixels[i] = (0, 0, 0)
 	client.put_pixels(pixels)
