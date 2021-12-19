@@ -1,12 +1,12 @@
 import os
-from time import wait
+import time
 
 returnedValue = serverCall = "sudo ../../fadecandy/bin/fcserver-rpi saturnVconfig.json"
 # call program here
 os.system(serverCall)
 print('returned value:', returnedValue)
 
-wait(2)
+time.sleep(2)
 
 
 #!/usr/bin/env python
