@@ -1,6 +1,6 @@
 import pygame
 
-sfName = "apollo11launch.wav"
+sfName = "../apollo11launch.wav"
 pygame.mixer.init()
 pygame.mixer.music.load(sfName)
 pygame.mixer.music.play()
