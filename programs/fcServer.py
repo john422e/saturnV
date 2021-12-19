@@ -15,6 +15,7 @@ time.sleep(2)
 
 #!/usr/bin/env python
 
+print("RUNNING LIGHTS")
 # Light each LED in sequence, and repeat.
 numLEDs = 50
 client = opc.Client('localhost:7890')
