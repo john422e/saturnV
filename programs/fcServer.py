@@ -1,7 +1,7 @@
 import os
 from time import wait
 
-returnedValue = serverCall = "sudo ../fadecandy/bin/fcserver-rpi saturnVconfig.json"
+returnedValue = serverCall = "sudo ../../fadecandy/bin/fcserver-rpi saturnVconfig.json"
 # call program here
 os.system(serverCall)
 print('returned value:', returnedValue)
