@@ -5,7 +5,7 @@
 
   "color": {
     "gamma": 2.5,
-    "whitepoint": [0.7, 0.7, 0.7]
+    "whitepoint": [1.0, 1.0, 1.0]
   },
 
   "devices": [
@@ -13,7 +13,7 @@
       "type": "fadecandy",
       "serial": "LZLPCGAGXBKXRZER",
       "map": [
-        [0, 0, 0, 50, "grb"]
+        [0, 0, 0, 512, "grb"]
       ]
     }
   ]
