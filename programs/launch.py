@@ -30,3 +30,7 @@ while pygame.mixer.music.get_busy() == True:
         client.put_pixels(pixels)
         time.sleep(0.01)
     continue
+
+# Fade to white
+client.put_pixels(black)
+time.sleep(0.5)
