@@ -32,5 +32,6 @@ while pygame.mixer.music.get_busy() == True:
     continue
 
 # Fade to white
+black = [ (0,0,0) ] * numLEDs
 client.put_pixels(black)
 time.sleep(0.5)
