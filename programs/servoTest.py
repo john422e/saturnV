@@ -21,7 +21,7 @@ def setAngle(newAngle):
         step = -1
 
     # step between currentAngle and newAngle by steps of 1
-    for angle in range(currentAngle, newAngle):
+    for angle in range(currentAngle, newAngle, step):
         duty = angle / 18 + 3
         GPIO.output(servoPIN, True)
         pwm.ChangeDutyCycle(duty)
