@@ -5,15 +5,23 @@ servoPIN = 11
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(servoPIN, GPIO.OUT)
 
-p = GPIO.PWM(servoPIN, 50) # GPIO 17 for PWM with 50Hz
-p.start(0.5) # Initialization
+pwm = GPIO.PWM(servoPIN, 50) # GPIO 17 for PWM with 50Hz
+pwm.start(0) # Initialization
 
-try:
-    while True:
-        print("TURN")
-        #p.ChangeDutyCycle(5)
-        #time.sleep(0.5)
+pwm.ChangeDutyCycle(5) # left -90 deg position
+time.sleep(1)
+pwm.ChangeDutyCycle(0)
+time.sleep(1)
 
-except KeyboardInterrupt:
-    p.stop()
-    GPIO.cleanup()
+pwm.ChangeDutyCycle(7.5) # neutral position
+time.sleep(1)
+pwm.ChangeDutyCycle(0)
+time.sleep(1)
+
+pwm.ChangeDutyCycle(10) # right +90 deg position
+time.sleep(1)
+pwm.ChangeDutyCycle(0)
+time.sleep(1)
+
+pwm.stop()
+GPIO.cleanup()
