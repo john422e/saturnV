@@ -10,13 +10,13 @@ pwm = GPIO.PWM(servoPIN, 50) # GPIO 17 for PWM with 50Hz
 # store the current angle
 currentAngle = 0
 
-def setAngle(angle):
-    if angle > currentAngle:
+def setAngle(newAngle):
+    if newAngle > currentAngle:
         step = 1
     else:
         step = -1
 
-    for i in range(currentAngle, angle):
+    for angle in range(currentAngle, newAngle):
         duty = angle / 18 + 3
         GPIO.output(servoPIN, True)
         pwm.ChangeDutyCycle(duty)
