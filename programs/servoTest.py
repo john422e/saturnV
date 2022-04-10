@@ -12,7 +12,7 @@ try:
     while True:
         print("TURN")
         #p.ChangeDutyCycle(5)
-        time.sleep(0.5)
+        #time.sleep(0.5)
 
 except KeyboardInterrupt:
     p.stop()
