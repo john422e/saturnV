@@ -10,20 +10,28 @@ p.start(2.5) # Initialization
 
 try:
     while True:
+        print("TURN")
         p.ChangeDutyCycle(5)
         time.sleep(0.5)
+        print("TURN")
         p.ChangeDutyCycle(7.5)
         time.sleep(0.5)
+        print("TURN")
         p.ChangeDutyCycle(10)
         time.sleep(0.5)
+        print("TURN")
         p.ChangeDutyCycle(12.5)
         time.sleep(0.5)
+        print("TURN")
         p.ChangeDutyCycle(10)
         time.sleep(0.5)
+        print("TURN")
         p.ChangeDutyCycle(7.5)
         time.sleep(0.5)
+        print("TURN")
         p.ChangeDutyCycle(5)
         time.sleep(0.5)
+        print("TURN")
         p.ChangeDutyCycle(2.5)
         time.sleep(0.5)
 
