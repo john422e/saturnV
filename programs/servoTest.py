@@ -12,7 +12,7 @@ def setAngle(angle):
     duty = angle / 18 + 3
     GPIO.output(servoPIN, True)
     pwm.ChangeDutyCycle(duty)
-    time.sleep(1)
+    time.sleep(5)
     GPIO.output(servoPIN, False)
     pwm.ChangeDutyCycle(duty)
 
