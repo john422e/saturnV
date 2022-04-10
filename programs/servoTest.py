@@ -25,12 +25,17 @@ def setAngle(newAngle):
         duty = angle / 18 + 3
         GPIO.output(servoPIN, True)
         pwm.ChangeDutyCycle(duty)
+
+        print(angle)
         time.sleep(stepWait)
+
         GPIO.output(servoPIN, False)
         pwm.ChangeDutyCycle(duty)
 
     # now update currentAngle
     currentAngle = newAngle
+    # stop motor
+    pwm.ChangeDutyCycle(0)
 
 pwm.start(0) # Initialization
 
