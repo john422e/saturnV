@@ -9,7 +9,7 @@ pwm = GPIO.PWM(servoPIN, 50) # GPIO 17 for PWM with 50Hz
 
 # store the current angle
 currentAngle = 0
-stepWait = 0.25 # time to wait in between steps
+stepWait = 0.1 # time to wait in between steps
 
 def setAngle(newAngle):
     if newAngle > currentAngle:
