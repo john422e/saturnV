@@ -21,8 +21,6 @@ pwm.start(0) # Initialization
 
 setting = True
 
-setAngle(90)
-"""
 while setting:
     angle = input("SET ANGLE ('q' to quit): ")
     if angle == 'q':
@@ -34,6 +32,6 @@ while setting:
         except:
             print("INPUT INTEGERS ONLY")
             continue
-"""
+\
 pwm.stop()
 GPIO.cleanup()
