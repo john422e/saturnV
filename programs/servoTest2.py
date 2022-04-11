@@ -5,7 +5,7 @@ from decimal import Decimal
 from gpiozero.pins.pigpio import PiGPIOFactory
 
 factory = PiGPIOFactory()
-sPin = 11
+sPin = 17
 servo = Servo(sPin, min_pulse_width=0.5/1000, max_pulse_width=2.5/1000, pin_factory=factory)
 
 # store the current angle and initialize to 0 (middle)
