@@ -1,6 +1,6 @@
 import os
 from gpiozero import Servo
-#import math
+import math
 from time import sleep
 from decimal import Decimal
 from gpiozero.pins.pigpio import PiGPIOFactory
@@ -38,7 +38,8 @@ def setPosition(newPos):
     while currentPos != newPos:
         # set new position
         print(currentPos)
-        servo.value = currentPos
+        #servo.value = currentPos
+        servo.value = math.sin(math.radians(currentPos))
         # increment currentPos
         currentPos += step
         #sleep
