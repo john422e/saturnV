@@ -5,6 +5,7 @@ from time import sleep
 from decimal import Decimal
 from gpiozero.pins.pigpio import PiGPIOFactory
 
+print("Starting pigpiod")
 returnedSysCall = os.system("sudo pigpiod")
 sleep(2)
 

@@ -3,6 +3,7 @@ import math, os
 from time import sleep
 from gpiozero.pins.pigpio import PiGPIOFactory
 
+print("Starting pigpiod")
 returnedSysCall = os.system("sudo pigpiod")
 sleep(2)
 
