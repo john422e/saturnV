@@ -6,6 +6,7 @@ from decimal import Decimal
 from gpiozero.pins.pigpio import PiGPIOFactory
 
 returnedSysCall = os.system("sudo pigpiod")
+sleep(2)
 
 factory = PiGPIOFactory()
 sPin = 17
