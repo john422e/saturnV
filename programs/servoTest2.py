@@ -1,8 +1,11 @@
+import os
 from gpiozero import Servo
 #import math
 from time import sleep
 from decimal import Decimal
 from gpiozero.pins.pigpio import PiGPIOFactory
+
+returnedSysCall = os.system("sudo pigpiod")
 
 factory = PiGPIOFactory()
 sPin = 17
